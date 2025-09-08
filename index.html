@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>TPT-Bench: A Large-Scale, Long-Term and Robot-Egocentric Dataset for Benchmarking Target Person Tracking</title>
+  <title>Follow-Bench: A Unified Motion Planning Benchmark for Socially-Aware Robot Person Following</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,10 +52,9 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered" style="max-width: 150%; width: 100%; padding-left: 0; padding-right: 0;">
-            <h1 class="title is-1 publication-title" style="width: 100%; word-wrap: break-word;">TPT-Bench: A Large-Scale, Long-Term and Robot-Egocentric Dataset for Benchmarking Target Person Tracking
+            <h1 class="title is-1 publication-title" style="width: 100%; word-wrap: break-word;">Follow-Bench: A Unified Motion Planning Benchmark for Socially-Aware Robot Person Following
             </h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
+            <!-- <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://medlartea.github.io/" target="_blank">Hanjing Ye</a><sup>1</sup>,</span>
               <span class="author-block">
@@ -86,13 +85,13 @@
                   </div>
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><sup>4</sup>Chen Kar-Shun RI, Hong Kong University of Science and Technology<br></span>
-                  </div>
+                  </div> -->
                   
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
                       <!-- Arxiv PDF link -->
-                      <span class="link-block">
+                      <!-- <span class="link-block">
                         <a href="http://arxiv.org/abs/2505.07446" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
@@ -100,7 +99,7 @@
                         </span>
                         <span>arXiv</span>
                       </a>
-                    </span>
+                    </span> -->
 
                     <!-- Video -->
                     <span class="link-block">
@@ -115,12 +114,12 @@
 
                 <!-- Github link -->
                 <span class="link-block">
-                  <a href="https://github.com/MedlarTea/TPT-BENCH-TOOLS" target="_blank"
+                  <a href="" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
-                    <span>Data & Code</span>
+                    <span>Code Coming Soon</span>
                   </a>
                 </span>
 
@@ -187,7 +186,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>        <div class="content has-text-justified">
           <p>
-            Tracking a target person from robot-egocentric views is crucial for developing autonomous robots that provide continuous personalized assistance or collaboration in Human-Robot Interaction (HRI) and Embodied AI. However, most existing target person tracking (TPT) benchmarks are limited to controlled laboratory environments with few distractions, clean backgrounds, and short-term occlusions. In this paper, we introduce a large-scale dataset designed for TPT in crowded and unstructured environments, demonstrated through a robot-person following task. The dataset is collected by a human pushing a sensor-equipped cart while following a target person, capturing human-like following behavior and emphasizing long-term tracking challenges, including frequent occlusions and the need for re-identification from numerous pedestrians. It includes multi-modal data streams, including odometry, 3D LiDAR, IMU, panoramic images, and RGB-D images, along with exhaustively annotated 2D bounding boxes of the target person across 48 sequences, both indoors and outdoors. Using this dataset and visual annotations, we perform extensive experiments with existing SOTA TPT methods, offering a thorough analysis of their limitations and suggesting future research directions.
+            Robot person following (RPF)---mobile robots that follow and assist a specific person---has emerging applications in personal assistance, security patrols, eldercare, and logistics. To be effective, such robots must accompany the target while ensuring both safety and comfort for the target and surrounding people. In this work, we present the first end-to-end study of RPF, which (i) surveys representative scenarios, motion-planning methods, and evaluation metrics with a focus on safety and comfort; (ii) introduces Follow-Bench, a unified benchmark that simulates diverse scenarios, including various target trajectory patters, dynamic-crowd patterns, and topographical variations; and (iii) re-implements six popular RPF planners, ensuring that both safety and comfort are systematically considered. Moreover, we evaluate the two highest-performing planners from our benchmark on a differential-drive robot to provide insights into real-world deployment. Extensive simulation and real-world experiments provide quantitative insights into the safety-comfort trade-offs of existing planners, while revealing open challenges and future research directions.
           </p>
         </div>
       </div>
