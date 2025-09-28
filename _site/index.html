@@ -44,6 +44,18 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
+<script>
+  bulmaCarousel.attach('#results-carousel', {
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    autoplay: false,   // ✅ 这里强制关闭自动播放
+    infinite: true,
+    navigation: true,  // ✅ 左右切换箭头
+    pagination: true   // ✅ 底部分页圆点
+  });
+</script>
+
 <body>
 
 
