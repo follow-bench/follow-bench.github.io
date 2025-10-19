@@ -140,7 +140,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/openAndSimulation-1080p.mp4"
+        <source src="static/videos/follow-bench-sim-1080p.mp4"
         type="video/mp4">
       </video>
     </div>
@@ -155,7 +155,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>        <div class="content has-text-justified">
           <p>
-            Robot person following (RPF)---mobile robots that follow and assist a specific person---has emerging applications in personal assistance, security patrols, eldercare, and logistics. To be effective, such robots must follow the target while ensuring safety and comfort for both the target and surrounding people. In this work, we present the first end-to-end study of RPF, which (i) surveys representative scenarios, motion-planning methods, and evaluation metrics with a focus on safety and comfort; (ii) introduces Follow-Bench, a unified benchmark simulating diverse scenarios, including various target trajectory patterns, dynamic-crowd flows, and environmental layouts; and (iii) re-implements six popular RPF planners, ensuring that both safety and comfort are systematically considered. Moreover, we evaluate the two highest-performing planners from our benchmark on a differential-drive robot to provide insights into real-world deployment. Extensive simulation and real-world experiments provide quantitative insights into the safety-comfort trade-offs of existing planners, while revealing open challenges and future research directions.
+            Robot person following (RPF)---mobile robots that follow and assist a specific person---has emerging applications in personal assistance, security patrols, eldercare, and logistics. To be effective, such robots must follow the target while ensuring safety and comfort for both the target and surrounding people. In this work, we present the first comprehensive study of RPF, which (i) surveys representative scenarios, motion-planning methods, and evaluation metrics with a focus on safety and comfort; (ii) introduces Follow-Bench, a unified benchmark simulating diverse scenarios, including various target trajectory patterns, crowd dynamics, and environmental layouts; and (iii) re-implements six representative RPF planners, ensuring that both safety and comfort are systematically considered. Moreover, we evaluate the two best-performing planners from our benchmark on a differential-drive robot to provide insights into real-world deployment of RPF planners. Extensive simulation and real-world experiments provide quantitative study of the safety-comfort trade-offs of existing planners, while revealing open challenges and future research directions.
           </p>
         </div>
       </div>
@@ -180,11 +180,11 @@
             </li>
             <li>
               <strong>Comfort:</strong>
-              In contrast, this is more subjective and is typically reflected in the robot's motion patterns and the relative distances between the robot, the target person, and surrounding pedestrians (i.e., proxemics). Higher-level aspects of comfort are beyond the scope of this review, such as following and approaching behaviors, group following, or explicit human-robot interaction.
+              In contrast, this is more subjective and is typically reflected in the robot's motion patterns and the relative distances between the robot, the target person, and surrounding pedestrians (i.e., proxemics).
             </li>
           </ul>
           <p>
-            Based on these two requirements, we review <strong>RPF-related scenarios, evaluation metrics and planners</strong>. To enable systematic benchmarking, we introduce <strong>Follow-Bench</strong>, a unified benchmark for evaluating RPF planners under diverse conditions, including various <strong>target trajectory patterns, pedestrian-flow patterns, and environmental layouts</strong>. We re-implement six popular RPF planners, ensuring that both safety and comfort are systematically considered, including: <strong>MPC-based, MPC w/ Traj., MPC w/ DS., SFM-based, DWA-based and DWA w/ Traj.</strong>
+            Guided by these two requirements, we comprehensively review <strong>RPF-related scenarios</strong> that challenge safety and comfort, and the <strong>evaluation metrics</strong> used to assess performance with respect to these requirements. Furthermore, the reviewed <strong>RPF planners</strong> are analyzed with an emphasis on how they are designed to address these two key requirements. To enable systematic performance evaluation, we introduce <strong>Follow-Bench</strong>, a unified benchmark for evaluating RPF planners under diverse conditions, including various <strong>target trajectory patterns, pedestrian-flow patterns, and environmental layouts</strong>. We re-implement six popular RPF planners, ensuring that both safety and comfort are systematically considered, including: <strong>MPC-based, MPC w/ Traj., MPC w/ DS., SFM-based, DWA-based and DWA w/ Traj.</strong>
           </p>
            
         </div>
